@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Robusta Sans;
+  src: url("fonts/Robusta Sans Demo.otf") format("otf");
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fffff;
+  font-family: Robusta Sans;
+  width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.header-left-side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.header-right-side {
+  padding: 0.5rem;
+  margin-right: 3rem;
+}

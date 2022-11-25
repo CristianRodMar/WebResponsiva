@@ -1,0 +1,20 @@
+@use "fonts"
+@use "colors"
+header
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  background-color: colors.$header-bg-color
+  font-family: fonts.$header-font
+  width: 100%
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
+.header-left-side
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: 1rem
+  padding: .5rem
+.header-right-side
+  padding: .5rem
+  margin-right: 3rem
