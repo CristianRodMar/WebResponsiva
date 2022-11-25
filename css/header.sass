@@ -1,5 +1,6 @@
 @use "fonts"
 @use "colors"
+@use "sizes"
 header
   display: flex
   flex-direction: row
@@ -13,8 +14,40 @@ header
   display: flex
   flex-direction: row
   align-items: center
-  gap: 1rem
-  padding: .5rem
+  gap: sizes.$header-gap
+  padding: sizes.$header-padding
 .header-right-side
-  padding: .5rem
+  padding: sizes.$header-padding
   margin-right: 3rem
+  display: flex
+  flex-direction: row
+.btn-h-left
+  background-color: transparent
+  font-size: sizes.$header-font-size
+  color: colors.$header-font-color
+  border: none
+  cursor: pointer
+  display: inline-block
+  position: relative
+  padding: 0
+  &:after
+    content: ''
+    position: absolute
+    width: 100%
+    transform: scaleX(0)
+    height: .15rem
+    bottom: 0
+    left: 0
+    background-color: colors.$header-font-color
+    transform-origin: bottom right
+    transition: transform 0.25s ease-out
+  &:hover::after
+    transform: scaleX(1)
+    transform-origin: bottom left
+.btn-h-right
+  background: transparent
+  padding: 0
+  border: none
+  cursor: pointer
+
+

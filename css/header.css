@@ -7,7 +7,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #fffff;
+  background-color: #ffffff;
   font-family: Robusta Sans;
   width: 100%;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -24,4 +24,40 @@ header {
 .header-right-side {
   padding: 0.5rem;
   margin-right: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-h-left {
+  background-color: transparent;
+  font-size: 1rem;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding: 0;
+}
+.btn-h-left:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.15rem;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.btn-h-left:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.btn-h-right {
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
 }
