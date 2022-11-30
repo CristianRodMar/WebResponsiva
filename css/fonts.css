@@ -1,4 +1,5 @@
-@font-face {
-  font-family: Robusta Sans;
-  src: url("fonts/Robusta Sans Demo.otf") format("otf");
-}
+/*@font-face 
+ * font-family: Robusta Sans
+ * src: url('fonts/Robusta Sans Demo.otf') format("otf")*/
+/*$main-font: Robusta Sans*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");

@@ -1,3 +1,118 @@
+@use "fonts"
 @import url('header.css')
 body
   margin: 0
+  padding: 0
+  font-family: fonts.$main-font
+.head-phones-scroll
+  padding: 3rem
+  display: flex
+  flex-direction: row
+  gap: 1rem
+  background-color: #f1f1f1
+  overflow: auto
+.head-phone-container
+  margin-top: 11vh
+  cursor: pointer
+  background-color: #ffffffff
+  img
+    height: 8.5rem
+    width: 14.5rem
+    opacity: 0.5
+    transition: 0.5s
+  &:hover > img
+    opacity: 1
+  div
+    padding: .5rem
+    display: flex
+    align-items: center
+    height: 3rem
+.catalog-container
+  padding:2rem
+.catalog-title-container
+  display: grid
+  grid-template-columns: 8fr 1fr
+  align-items: flex-start
+  width: 100%
+  a
+    color:#4f4f4f
+    font-weight: bold
+  .products-number
+    padding-top: 1rem
+    color: #5e5e5e
+.title-description
+  h2
+    font-weight: bolder
+    font-size: 3rem
+    margin:0
+    padding: 0
+.products-container
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  gap: 2rem
+.product
+  img
+    width: 100%
+    background-color: #fafafa
+.name-product
+  font-weight: bold
+.note-product
+  color: #5b5b5b
+  font-size: .9rem
+.price-product
+  font-weight: bold
+.products-table
+  padding: 0 2rem 1rem 2rem
+  h2
+    padding:0
+    margin: 0
+    font-size: 2rem
+.sm-row
+  display: none
+.table-container
+  padding:5rem
+.products-info-table
+  border-collapse: collapse
+  .line-tr
+    border-bottom: 1px solid #6c6c6c
+  td
+    color: #585858
+    padding: 1rem
+    text-align: center
+  th
+    font-weight: bolder
+@media screen and (max-width:1100px)
+  .catalog-title-container
+    grid-template-columns: 1fr
+    .products-number
+      padding-top: 0
+      padding-bottom: 1rem
+      text-align: right
+      font-size: .8rem
+@media screen and (max-width: 900px)
+  .products-container
+    grid-template-columns: 1fr 1fr
+  .catalog-title-container
+    grid-template-columns: 1fr
+    .products-number
+      padding-top: 0
+      padding-bottom: 1rem
+      text-align: left
+      font-size: .8rem
+  .table-container
+    padding:0
+  .sm-row
+    display: table-cell
+  .bg-row
+    display: none
+  .products-info-table
+    img
+      width: 15rem
+@media screen and (max-width: 700px)
+  .products-info-table
+    img
+      width: 8rem
+    td
+      padding: 1rem 0
+    
+  

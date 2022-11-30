@@ -1,4 +1,3 @@
-@use "fonts"
 @use "colors"
 @use "sizes"
 header
@@ -7,9 +6,11 @@ header
   justify-content: space-between
   align-items: center
   background-color: colors.$header-bg-color
-  font-family: fonts.$header-font
   width: 100%
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
+  min-height: 10vh
+  position: fixed
+  z-index: 20
 .header-left-side
   display: flex
   flex-direction: row
@@ -44,10 +45,24 @@ header
   &:hover::after
     transform: scaleX(1)
     transform-origin: bottom left
-.btn-h-right
+.btn-no-border
   background: transparent
   padding: 0
   border: none
   cursor: pointer
-
+.burger-menu
+  display: none
+  width: 100%
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  padding: sizes.$header-padding
+@media screen and (max-width: 900px)
+  .header-left-side
+    display: none
+  .header-right-side
+    display: none
+  .burger-menu
+    display: flex
+  
 
