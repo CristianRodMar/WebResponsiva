@@ -115,14 +115,18 @@ body {
 }
 .products-info-table td {
   color: #585858;
-  padding: 1rem;
+  padding: 1rem 0;
   text-align: center;
 }
 .products-info-table th {
   font-weight: bolder;
+  padding: 1rem 0;
 }
 .products-info-table img {
   width: 15rem;
+}
+.products-info-table .name {
+  padding: 0;
 }
 
 @media screen and (max-width: 1100px) {
@@ -165,8 +169,5 @@ body {
 @media screen and (max-width: 700px) {
   .products-info-table img {
     width: 8rem;
-  }
-  .products-info-table td {
-    padding: 1rem 0;
   }
 }
